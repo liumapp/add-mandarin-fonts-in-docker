@@ -1,0 +1,23 @@
+version: '2'
+
+services:
+  nginx:
+    container_name: nginx
+    restart: always
+    image: nginx:1.13
+    ports:
+      - 80:80
+    volumes:
+      - ./logs:/var/log/nginx
+      - ./fonts:/fonts
+    # command:
+    #   - /bin/bash
+    #   - -c
+    #   - |
+    #       cd /fonts
+    #       chmod -R a+w /usr/share/fonts
+    #       mv fangsong.ttf /usr/share/fonts/
+    #       mv heiti.ttf /usr/share/fonts/
+    #       mv huawenfangsong.ttf /usr/share/fonts/
+    #       mv huawenxihei.ttf /usr/share/fonts/
+    #       mv yahei.ttf /usr/share/fonts/
