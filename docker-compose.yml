@@ -9,11 +9,4 @@ services:
       - 80:80
     volumes:
       - ./logs:/var/log/nginx
-      - ./tmp:/fonts
-    command: 
-      - /bin/bash
-      - -c
-      - | 
-          chmod -R a+w /usr/share/fonts
-          mv /usr/share/fonts /fonts
-          
+      - ./fonts:/usr/share/fonts
