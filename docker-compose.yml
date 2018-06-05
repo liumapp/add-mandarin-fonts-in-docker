@@ -10,3 +10,4 @@ services:
     volumes:
       - ./logs:/var/log/nginx
       - ./fonts:/usr/share/fonts
+
