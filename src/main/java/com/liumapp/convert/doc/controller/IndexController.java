@@ -1,6 +1,6 @@
 package com.liumapp.convert.doc.controller;
 
-import com.liumapp.convert.doc.Doc2PDF;
+import com.liumapp.convert.doc.util.Doc2PDF;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 

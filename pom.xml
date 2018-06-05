@@ -38,56 +38,46 @@
       <groupId>com.aspose.words</groupId>
       <artifactId>aspose-words</artifactId>
       <version>15.8.0</version>
-      <scope>system</scope>
-      <systemPath>${basedir}/lib/aspose-words-15.8.0-jdk16.jar</systemPath>
+      <!--<scope>system</scope>-->
+      <!--<systemPath>${basedir}/lib/aspose-words-15.8.0-jdk16.jar</systemPath>-->
     </dependency>
   </dependencies>
 
+  <repositories>
+    <repository>
+      <id>nexus</id>
+      <name>Nexus Repository</name>
+      <url>http://118.190.40.58:8081/repository/maven-public/</url>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+    </repository>
+  </repositories>
+
+  <pluginRepositories>
+    <pluginRepository>
+      <id>nexus</id>
+      <name>Nexus Plugin Repository</name>
+      <url>http://118.190.40.58:8081/repository/maven-public/</url>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+    </pluginRepository>
+  </pluginRepositories>
+
   <build>
     <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-jar-plugin</artifactId>
-        <configuration>
-          <archive>
-            <manifest>
-              <addClasspath>true</addClasspath>
-              <classpathPrefix>${basedir}/lib/</classpathPrefix>
-            </manifest>
-          </archive>
-        </configuration>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-dependency-plugin</artifactId>
-        <executions>
-          <execution>
-            <id>copy-dependencies</id>
-            <phase>package</phase>
-            <goals>
-              <goal>copy-dependencies</goal>
-            </goals>
-            <configuration>
-              <outputDirectory>${basedir}/target/lib</outputDirectory>
-              <overWriteReleases>false</overWriteReleases>
-              <overWriteSnapshots>false</overWriteSnapshots>
-              <overWriteIfNewer>true</overWriteIfNewer>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
           <source>1.8</source>
           <target>1.8</target>
-          <encoding>UTF-8</encoding>
-        </configuration>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-resources-plugin</artifactId>
-        <configuration>
           <encoding>UTF-8</encoding>
         </configuration>
       </plugin>

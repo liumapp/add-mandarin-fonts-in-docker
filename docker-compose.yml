@@ -1,4 +1,4 @@
-version: '2'
+version: '3'
 
 services:
   mandarin:
@@ -9,4 +9,5 @@ services:
       - 8080:8080
     volumes:
       - ./fonts:/usr/share/fonts
-
+      - ./target/add-mandarin-fonts-in-docker-v1.0.0.jar:/add-mandarin-fonts-in-docker-v1.0.0.jar
+    command: java -jar add-mandarin-fonts-in-docker-v1.0.0.jar

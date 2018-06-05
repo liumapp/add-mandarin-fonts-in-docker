@@ -1,11 +1,10 @@
 package com.liumapp.convert.doc;
 
+import com.liumapp.convert.doc.util.Doc2PDF;
 import junit.framework.TestCase;
 import org.junit.Test;
 
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.InputStream;
 
 /**
  * @author liumapp
