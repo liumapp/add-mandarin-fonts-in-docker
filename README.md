@@ -23,4 +23,5 @@ Add mandarin fonts in Docker .
 
 * the file /pdf/wrongpdf.pdf shows the wrong convert files without mandarin fonts. 
 
+* the file /pdf/test.pdf shows the correct convert files with mandarin fonts.
 	 		 		
