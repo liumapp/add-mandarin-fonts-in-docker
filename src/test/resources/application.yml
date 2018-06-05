@@ -1,0 +1,2 @@
+spring.application.name=add-mandarin-fonts-in-docker
+server.port=8080
