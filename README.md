@@ -1,6 +1,8 @@
 # add-mandarin-fonts-in-docker
 Add mandarin fonts in Docker . 
 
+[中文文档](http://www.liumapp.com/articles/2018/06/05/1528179707247.html)
+
 ## how to use
 
 * simple add mandarin fonts . 
