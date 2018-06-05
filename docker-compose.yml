@@ -5,6 +5,10 @@ services:
     container_name: mandarin
     restart: always
     image: liumapp/add-mandarin-fonts-in-docker:v1.0.0
+    build:
+      context: .
+      args:
+        - LANG=C.UTF-8
     ports:
       - 8080:8080
     volumes:
