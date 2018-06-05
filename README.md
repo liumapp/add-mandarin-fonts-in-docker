@@ -13,4 +13,14 @@ Add mandarin fonts in Docker .
 
 		fc-list :lang=zh 
 
-	if you find mandarin fonts in the list , then you are success . 		
+	if you find mandarin fonts in the list , then you are success .
+	
+## demo
+
+* run ./build-image.sh
+
+* run docker-compose up 
+
+* the file /pdf/wrongpdf.pdf shows the wrong convert files without mandarin fonts. 
+
+	 		 		

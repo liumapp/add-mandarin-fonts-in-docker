@@ -16,7 +16,7 @@ import java.io.FileNotFoundException;
 
 public class Doc2PDFTest extends TestCase {
 
-    private String pdfPath = "/usr/local/tomcat/project/convert-doc-to-pdf/test.pdf";
+    private String pdfPath = "/usr/local/tomcat/project/convert-doc-to-pdf/wrongpdf.pdf";
 
     private String docPath = "/usr/local/tomcat/project/convert-doc-to-pdf/doc/test.doc";
 

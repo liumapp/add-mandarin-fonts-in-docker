@@ -27,7 +27,7 @@ public class IndexController {
         System.out.println("this is index controller ,ready to convert test doc into pdf ");
 
         Doc2PDF doc2PDF = new Doc2PDF();
-        doc2PDF.doc2pdf(pdfPath + "test.pdf", docPath + "test.doc");
+        doc2PDF.doc2pdf(pdfPath + "wrongpdf.pdf", docPath + "test.doc");
     }
 
 }
