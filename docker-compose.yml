@@ -11,4 +11,5 @@ services:
       - ./fonts:/usr/share/fonts
       - ./target/add-mandarin-fonts-in-docker-v1.0.0.jar:/add-mandarin-fonts-in-docker-v1.0.0.jar
       - ./pdf:/pdf
+      - ./doc:/doc
     command: java -jar add-mandarin-fonts-in-docker-v1.0.0.jar
