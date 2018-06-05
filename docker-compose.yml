@@ -1,13 +1,12 @@
 version: '2'
 
 services:
-  nginx:
-    container_name: nginx
+  mandarin:
+    container_name: mandarin
     restart: always
-    image: nginx:1.13
+    image: liumapp/add-mandarin-fonts-in-docker:v1.0.0
     ports:
-      - 80:80
+      - 8080:8080
     volumes:
-      - ./logs:/var/log/nginx
       - ./fonts:/usr/share/fonts
 
