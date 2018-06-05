@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("")
 public class IndexController {
 
-    private String path = "/Users/docker/add-mandarin-fonts-in-docker/";
+    private String path = "/pdf/";
 
     @RequestMapping("")
     public void index () {
