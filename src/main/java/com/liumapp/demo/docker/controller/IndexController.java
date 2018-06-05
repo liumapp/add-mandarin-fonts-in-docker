@@ -24,10 +24,10 @@ public class IndexController {
 
     @RequestMapping("")
     public void index () {
-        System.out.println("this is index controller ,ready to convert test doc into pdf ");
+        System.out.println("这是index控制器，准备将test.doc转换为test.pdf");
 
         Doc2PDF doc2PDF = new Doc2PDF();
-        doc2PDF.doc2pdf(pdfPath + "wrongpdf.pdf", docPath + "test.doc");
+        doc2PDF.doc2pdf(pdfPath + "test.pdf", docPath + "test.doc");
     }
 
 }
