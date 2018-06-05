@@ -1,6 +1,6 @@
-package com.liumapp.convert.doc;
+package com.liumapp.demo.docker;
 
-import com.liumapp.convert.doc.util.Doc2PDF;
+import com.liumapp.demo.docker.util.Doc2PDF;
 import junit.framework.TestCase;
 import org.junit.Test;
 
